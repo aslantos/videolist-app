@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoList</title>
+    <link rel="stylesheet" href="videoListStyle.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class = "app">
+                <h2>Мои видео</h2>
+                <button class = "btnAdd">+</button>
+            </div>
+            <ul class = "videoList"></ul>
+
+        </div>
+
+        <div class="container">
+            <div class = "app">
+                <h2>Просмотрено</h2>
+            </div>
+            <ul class="watchedList"></ul>
+        </div>
+    </div>
+
+    <div class="modal hidden">
+        <div class="modalContent">
+            <h3>Добавьте видео</h3>
+
+            <input type="text" class="inputLink" placeholder="Link">
+            <input type="text" class="inputTitle" placeholder="Video title">
+            <input type="date" class="inputDate">
+            <textarea class="inputReview" placeholder="Write review"></textarea>
+
+            <button class="saveVideo">Добавить</button>
+        </div>
+    </div>
+
+    <script src="videoListScript.js"></script>
+</body>
+</html>
